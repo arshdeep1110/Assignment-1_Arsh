@@ -1,0 +1,112 @@
+/* custom css goes here */
+/*Main contents*/
+
+#main{
+  display: flex;
+  padding: 30px;
+  background-color:  hsl(193, 76%, 65%);
+  align-content: center;
+  text-align: center;
+  border: 20px;
+  font-style: normal;
+  color:rgb(12, 18, 10)
+}
+
+#Arsh{
+  margin-top: 30px;
+  background-color: hsl(193, 76%, 65%);
+}
+/*footer*/
+footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/ 
+  height: 30px;
+  background: #555;
+  color: white;
+}
+
+#abt #image{
+  width:40%;
+  height:90%;
+  margin-right:80px;
+}
+ /*contact page*/
+
+#con {
+  background-color: hsl(193, 76%, 65%);
+  padding-top: 32px;
+  color:whitesmoke;
+
+  
+}
+
+
+h2 {
+  text-align: center;
+  color: rgba(5, 63, 46, 0.968);
+
+}
+
+
+h1 {
+  text-align: center;
+  color:rgba(115, 98, 241, 0.783);
+
+}
+
+/* Project page */
+
+#project{
+  
+  background-color: hsl(193, 76%, 65%);
+  padding-left: 20px;
+}
+
+#project .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+#project img{
+  border: 5px solid #555;
+}
+#project h3{
+  color: green;
+}
+/* Services page */
+#service{
+  background-color:  hsl(193, 76%, 65%);
+padding-left: 20px;
+
+}
+p{
+  font-size: large;
+}
+#service img{
+  text-align: center;
+}
+#service .Know {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/* About page */
+
+#singh #images {
+  text-align: center;
+
+}
+#singh {
+  background-color: hsl(193, 76%, 65%);
+
+}
+#info{
+  font-size: large;
+  margin:20px;
+}

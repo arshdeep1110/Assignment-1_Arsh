@@ -1,0 +1,71 @@
+<%- include partials/header.ejs%>
+
+
+<%- include partials/main_nav.ejs%>
+
+   
+<main id="con">
+    <div >
+      <h1 id="heading2">Welcome to the Contact page</h1>
+      </div>
+        <div class="container" id="contain">
+        <div class="row ">
+          <div class="col-lg-7 mx-auto">
+            <div class="card mt-2 mx-auto p-4 bg-dark">
+                <div class="card-body bg-dark">
+                <div class = "container">
+                                 <form id="contact-form" role="form">
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Your Firstname</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your firstname *" required="required" data-error="Firstname is required.">        
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Your Lastname</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                                                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email">Email</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Phone Number</label>
+                                <input id="form_lastname" type="number" name="surname" class="form-control" placeholder="Please enter your Contact *" required="required" data-error="Lastname is required.">
+                                                                </div>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Comment</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Write your Comment here." rows="4" required="required" data-error="Please, leave us a message."></textarea
+                                    >
+                                </div>
+                            </div>
+                            </div>
+                            <br>
+                        <div class="col-md-12">
+                           <button id="buton">Submit</button> 
+                    </div>
+                    </div>
+            </div>
+             </form>
+     
+</main>
+
+
+
+
+<%- include partials/bottom_nav.ejs%>
+
+<%- include partials/footer.ejs%> 
