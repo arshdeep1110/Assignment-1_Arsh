@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/"><img src="assets\images\logo.jpg" height="70px", width="110px" ></a>
+    <a class="navbar-brand" href="/"><img src="\assets\images\logo.jpg" height="70px", width="110px" ></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,6 +45,20 @@
         <li class="nav-item">
         <% } %> 
           <a class="nav-link" href="/contact"> Contact </a>
+        </li>
+        <% if (title == "Login") { %>
+          <li class="nav-item active">
+       <% } else { %>
+        <li class="nav-item">
+        <% } %> 
+          <a class="nav-link" href="/login"> Login </a>
+        </li>
+        <% if (title == "Business Contacts") { %>
+          <li class="nav-item active">
+       <% } else { %>
+        <li class="nav-item">
+        <% } %> 
+          <a class="nav-link" href="/auth/"> Business Contacts </a>
         </li>
       </div>
     </nav>

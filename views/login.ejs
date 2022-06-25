@@ -1,0 +1,48 @@
+<%- include partials/header.ejs%>
+
+
+    <%- include partials/main_nav.ejs%>
+
+
+        <main id="con">
+            <div>
+                <h1 id="heading2">Welcome to the Login page</h1>
+            </div>
+            <div class="container" id="contain">
+                <div class="row ">
+                    <div class="col-lg-7 mx-auto">
+                        <div class="card mt-2 mx-auto p-4 bg-dark">
+                            <div class="card-body bg-dark">
+                                <div class="container">
+                                    <form method="post" role="form">
+                                        <div class="controls">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="form_name">Your Username</label>
+                                                        <input  type="text" name="username" class="form-control" placeholder="Enter your Username *" required="required" data-error="Username is required.">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="form_password">Your Password</label>
+                                                        <input type="password" name="password" class="form-control" placeholder="Enter your Password *" required="required" data-error="Password is required.">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 my-3">
+                                                    <button type="submit" class="btn btn-success w-100">Login Now</button>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                </div>
+                                </form>
+
+        </main>
+
+
+
+
+        <%- include partials/bottom_nav.ejs%>
+
+            <%- include partials/footer.ejs%>

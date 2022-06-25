@@ -1,0 +1,60 @@
+<%- include ../partials/header.ejs%>
+
+
+    <%- include ../partials/main_nav.ejs%>
+
+
+        <main id="con">
+            <div>
+                <h1 id="heading2"><%= title %></h1>
+            </div>
+            <div class="container" id="contain">
+                <div class="row ">
+                    <div class="col-lg-7 mx-auto">
+                        <div class="card mt-2 mx-auto p-4 bg-dark">
+                            <div class="card-body bg-dark">
+                                <div class="container">
+                                    <form method="post" role="form">
+                                        <div class="controls">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="form_name">Contact Name</label>
+                                                        <input type="text" name="name" class="form-control" placeholder="Enter Contact Name *" required="required" data-error="Contact Name is required." value="<%= contact.name %>">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="form_password">Contact Number</label>
+                                                        <input type="text" name="number" class="form-control" placeholder="Enter Contact Number *" required="required" data-error="Contact Number is required." value="<%= contact.number %>">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="form_name">Contact Email</label>
+                                                        <input type="email" name="email" class="form-control" placeholder="Enter Contact Email *" required="required" data-error="Contact Email is required." value="<%= contact.email %>">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mt-3 mb-1">
+                                                    <button type="submit" class="btn btn-success w-100">Update Contact</button>
+                                                </div>
+                                                <div class="col-md-12 my-1">
+                                                    <a href="/auth/delete/<%= contact._id %>" class="btn btn-danger w-100">Delete Contact</a>
+                                                </div>
+                                                <div class="col-md-12 my-1">
+                                                    <a href="/auth/" class="btn btn-secondary w-100">Cancel</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                </div>
+                                </form>
+
+        </main>
+
+
+
+
+        <%- include ../partials/bottom_nav.ejs%>
+
+            <%- include ../partials/footer.ejs%>
